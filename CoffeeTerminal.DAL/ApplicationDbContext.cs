@@ -1,16 +1,24 @@
 ﻿using CoffeeTerminal.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace CoffeeTerminal.DAL
 {
     public sealed class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
+        private readonly IConfiguration _configuration;
+
+        public ApplicationDbContext(IConfiguration configuration)
         {
-            Database.EnsureCreated();
+            _configuration = configuration;
         }
 
-        public DbSet<Coffee> Coffee { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
+        }
+
+        public DbSet<Coffee> Products { get; set; }
     }
-}
+}   

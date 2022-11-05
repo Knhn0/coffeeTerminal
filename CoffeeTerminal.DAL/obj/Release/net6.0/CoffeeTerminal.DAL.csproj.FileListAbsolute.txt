@@ -1,0 +1,17 @@
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.DAL.deps.json
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.DAL.runtimeconfig.json
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.DAL.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.DAL.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.Domain.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\bin\Release\net6.0\CoffeeTerminal.Domain.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.csproj.AssemblyReference.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.AssemblyInfoInputs.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.AssemblyInfo.cs
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.csproj.CoreCompileInputs.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.csproj.CopyComplete
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\refint\CoffeeTerminal.DAL.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\CoffeeTerminal.DAL.genruntimeconfig.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.DAL\obj\Release\net6.0\ref\CoffeeTerminal.DAL.dll

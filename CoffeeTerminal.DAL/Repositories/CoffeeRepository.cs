@@ -26,7 +26,7 @@ public class CoffeeRepository : ICoffeeRepository
 
     public Task<List<Coffee>> Select()
     {
-        return _db.Coffee.ToListAsync();
+        return _db.Products.ToListAsync();
     }
 
     public bool Delete(Coffee entity)
