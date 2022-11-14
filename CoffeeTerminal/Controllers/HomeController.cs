@@ -7,7 +7,6 @@ namespace CoffeeTerminal.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-
 public class HomeController : Controller
 {
     private readonly ICoffeeRepository _coffeeRepository;
@@ -18,10 +17,16 @@ public class HomeController : Controller
         _coffeeRepository = coffeeRepository;
     }
 
-    [HttpPost]
-    public async Task<ActionResult> Index()
+    [HttpGet]
+    public async Task<ActionResult> GetById()
     {
-        var response = await _coffeeRepository.Select();
-        return Ok(response);
+        try
+        {
+            return Ok("Добро пожаловать в терминал для заказа кофе!");
+        }
+        catch
+        {
+            return BadRequest("Error...");
+        }
     }
 }

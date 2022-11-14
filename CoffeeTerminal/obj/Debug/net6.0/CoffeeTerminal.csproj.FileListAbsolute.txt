@@ -66,3 +66,5 @@ C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\Npgsql.dll
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\Humanizer.dll
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\CoffeeTerminal.Service.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\CoffeeTerminal.Service.pdb

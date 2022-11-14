@@ -4,13 +4,13 @@ namespace CoffeeTerminal.DAL.Interfaces
 {
     public interface IBaseRepository<T>
     {
-        bool Create(T entity);
+        Task<bool> Create(T entity);
 
-        T Get(int id);
+        Task<Coffee> Get(int id);
 
         Task<List<Coffee>> Select();
 
-        bool Delete(T entity);
-        
+        //void Delete(T entity);
+        Task<bool> Delete(T entity);
     }
 }

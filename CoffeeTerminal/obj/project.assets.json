@@ -929,6 +929,20 @@
         "runtime": {
           "bin/placeholder/CoffeeTerminal.Domain.dll": {}
         }
+      },
+      "CoffeeTerminal.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CoffeeTerminal.DAL": "1.0.0",
+          "CoffeeTerminal.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoffeeTerminal.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoffeeTerminal.Service.dll": {}
+        }
       }
     }
   },
@@ -2323,12 +2337,18 @@
       "type": "project",
       "path": "../CoffeeTerminal.Domain/CoffeeTerminal.Domain.csproj",
       "msbuildProject": "../CoffeeTerminal.Domain/CoffeeTerminal.Domain.csproj"
+    },
+    "CoffeeTerminal.Service/1.0.0": {
+      "type": "project",
+      "path": "../CoffeeTerminal.Service/CoffeeTerminal.Service.csproj",
+      "msbuildProject": "../CoffeeTerminal.Service/CoffeeTerminal.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CoffeeTerminal.DAL >= 1.0.0",
       "CoffeeTerminal.Domain >= 1.0.0",
+      "CoffeeTerminal.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
@@ -2369,6 +2389,9 @@
             },
             "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj": {
               "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj"
+            },
+            "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj": {
+              "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj"
             }
           }
         }

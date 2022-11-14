@@ -10,6 +10,7 @@
         "dependencies": {
           "CoffeeTerminal.DAL": "1.0.0",
           "CoffeeTerminal.Domain": "1.0.0",
+          "CoffeeTerminal.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -530,6 +531,14 @@
         "runtime": {
           "CoffeeTerminal.Domain.dll": {}
         }
+      },
+      "CoffeeTerminal.Service/1.0.0": {
+        "dependencies": {
+          "CoffeeTerminal.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CoffeeTerminal.Service.dll": {}
+        }
       }
     }
   },
@@ -902,6 +911,11 @@
       "sha512": ""
     },
     "CoffeeTerminal.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoffeeTerminal.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CoffeeTerminal.DAL\CoffeeTerminal.DAL.csproj" />
     <ProjectReference Include="..\CoffeeTerminal.Domain\CoffeeTerminal.Domain.csproj" />
+    <ProjectReference Include="..\CoffeeTerminal.Service\CoffeeTerminal.Service.csproj" />
   </ItemGroup>
 
 </Project>

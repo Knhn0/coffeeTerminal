@@ -1,4 +1,8 @@
 using CoffeeTerminal.DAL;
+using CoffeeTerminal.DAL.Interfaces;
+using CoffeeTerminal.DAL.Repositories;
+using CoffeeTerminal.Service.Implementations;
+using CoffeeTerminal.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+// Add services
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<ICoffeeRepository, CoffeeRepository>();
+builder.Services.AddScoped<IMenuService, MenuService>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -31,6 +40,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseRouting();
 
 app.MapControllers();
 

@@ -19,6 +19,6 @@ namespace CoffeeTerminal.DAL
             optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
         }
 
-        public DbSet<Coffee> Products { get; set; }
+        public DbSet<Coffee> goods { get; set; }
     }
 }   
