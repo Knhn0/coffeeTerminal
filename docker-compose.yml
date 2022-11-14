@@ -1,0 +1,26 @@
+﻿version: "3"
+services:
+  database:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Mok2808ght
+      POSTGRES_DB: coffeeTerminal
+    volumes:
+      - pgd:/var/lib/postgresql/data
+
+  application:
+    command: dotnet CoffeeTerminal.dll --environment=Production
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+    restart: always
+    build:
+      context: .
+      dockerfile: CoffeeTerminal/Dockerfile
+  
+
+volumes:
+  pgd:
