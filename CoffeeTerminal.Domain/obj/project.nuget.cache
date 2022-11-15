@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/20v1jzduByWxqJBt4tBfaKtDio9qUc9GPhmJpPO2kR3DIDrAn+4Oken6CLqBAauJ3nDYddT2rwY/8F1eYfRDA==",
+  "dgSpecHash": "ZZ8Zw+I2wfRgcwISFBG6zqJfnkdVmJdtSPburjnrYTcADjb5pww3bJ4M85sblr+mUAQa1x1Ha6gZcgQYu/7nHg==",
   "success": true,
-  "projectFilePath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
+  "projectFilePath": "C:\\learn\\psu\\coffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.0.8:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }
