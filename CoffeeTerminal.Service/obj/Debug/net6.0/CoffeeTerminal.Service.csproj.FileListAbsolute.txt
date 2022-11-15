@@ -1,0 +1,17 @@
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.Service.deps.json
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.Service.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.Service.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.Domain.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.Domain.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.csproj.AssemblyReference.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.AssemblyInfoInputs.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.AssemblyInfo.cs
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.csproj.CoreCompileInputs.cache
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.csproj.CopyComplete
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\refint\CoffeeTerminal.Service.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\CoffeeTerminal.Service.pdb
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\obj\Debug\net6.0\ref\CoffeeTerminal.Service.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.DAL.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Service\bin\Debug\net6.0\CoffeeTerminal.DAL.pdb

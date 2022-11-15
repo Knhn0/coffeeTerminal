@@ -16,14 +16,14 @@ public class MenuController : BaseController
     }
 
     [HttpGet]
-    public ActionResult<List<Coffee>> GetMenu()
+    public async Task<IActionResult> GetMenu()
     {
-        var requset = _menuService.GetMenu();
+        var requset = await _menuService.GetMenu();
         if (requset == null)
         {
             return BadRequest("Таблица не заполнена");
         }
 
-        return Ok($"Добро пожаловать в терминал для заказа кофе! Наше меню: {requset}");
+        return Ok(requset);
     }
 }
