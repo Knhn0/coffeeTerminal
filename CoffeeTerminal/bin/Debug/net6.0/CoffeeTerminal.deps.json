@@ -534,6 +534,7 @@
       },
       "CoffeeTerminal.Service/1.0.0": {
         "dependencies": {
+          "CoffeeTerminal.DAL": "1.0.0",
           "CoffeeTerminal.Domain": "1.0.0"
         },
         "runtime": {

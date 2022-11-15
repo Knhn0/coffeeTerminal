@@ -1,13 +1,13 @@
-﻿using CoffeeTerminal.Domain.Entity;
-using CoffeeTerminal.Domain.Interfaces;
-using CoffeeTerminal.Service.Implementations;
+﻿using System.ComponentModel.DataAnnotations;
+using CoffeeTerminal.DAL.Interfaces;
+using CoffeeTerminal.Domain.Entity;
 using CoffeeTerminal.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoffeeTerminal.Controllers;
-public abstract class MenuController : Controller
-{
 
+public class MenuController : BaseController
+{
     private readonly IMenuService _menuService;
 
     public MenuController(IMenuService menuService)
@@ -16,9 +16,14 @@ public abstract class MenuController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetMenu()
+    public ActionResult<List<Coffee>> GetMenu()
     {
-        var responce = await _menuService.GetMenu();
-        return responce.Data;
+        var requset = _menuService.GetMenu();
+        if (requset == null)
+        {
+            return BadRequest("Таблица не заполнена");
+        }
+
+        return Ok($"Добро пожаловать в терминал для заказа кофе! Наше меню: {requset}");
     }
 }
