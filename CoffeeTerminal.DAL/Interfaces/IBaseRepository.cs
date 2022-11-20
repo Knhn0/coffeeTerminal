@@ -1,16 +1,15 @@
 ﻿using CoffeeTerminal.Domain.Entity;
 
-namespace CoffeeTerminal.DAL.Interfaces
+namespace CoffeeTerminal.DAL.Interfaces;
+
+public interface IBaseRepository<T>
 {
-    public interface IBaseRepository<T>
-    {
-        Task<bool> Create(T entity);
+    Task<bool> Create(T entity);
 
-        Task<Coffee> Get(int id);
+    Task<T> Get(int id);
 
-        Task<List<Coffee>> Select();
+    Task<List<T>> Select();
 
-        //void Delete(T entity);
-        Task<bool> Delete(T entity);
-    }
+    //void Delete(T entity);
+    Task<bool> Delete(T entity);
 }

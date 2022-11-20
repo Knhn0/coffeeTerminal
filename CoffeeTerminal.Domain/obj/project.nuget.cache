@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "06E3hNKyBGzjt5nuLPJYZGVTt1dFmuYumtEhQvo0YXanznEPQZyptH9mHvE/HMghCIM66VqGXgeftF8zKLtlHA==",
+  "dgSpecHash": "0FQqCGcv2GiO39tlYR53Z+5b1yHqxYopkFw8EZ5pVbG5ItUmd9IYkA0BWtLtaxiiv0D1NoPJNrUCEV0uot8hrQ==",
   "success": true,
   "projectFilePath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

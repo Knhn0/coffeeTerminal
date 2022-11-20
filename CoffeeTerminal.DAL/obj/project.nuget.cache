@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "x4T13UwMZibxytw4wEy5D8dZjA4VuNYf+F0eU+3BuJTrch7u7a8oYh9z70D37M+sgwggHHNVXWc9OsrZ11jylw==",
+  "dgSpecHash": "L26Qpzyyy/6r2ne5Fa5TLsh8AlHI51aGeGzykAAFKiIAHF+R3ty2k8AFduhk8yUDuwkJseX21Hk9XlAHb94WEA==",
   "success": true,
   "projectFilePath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.DAL\\CoffeeTerminal.DAL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",

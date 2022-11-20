@@ -1,4 +1,6 @@
 ﻿using System.Xml;
+using CoffeeTerminal.DAL.Interfaces;
+using CoffeeTerminal.DAL.Repositories;
 using CoffeeTerminal.Domain.Entity;
 using CoffeeTerminal.Service.Interfaces;
 
@@ -6,24 +8,36 @@ namespace CoffeeTerminal.Service.Implementations
 {
     public class OrderService : IOrderService
     {
-        public Order? CreateOrder(Order order)
+        private readonly IOrderRepository _orderRepository;
+
+        public OrderService(IOrderRepository orderRepository)
         {
-            if (order.OrderId == 0)
-            {
-                return null;
-            }
+            _orderRepository = orderRepository;
+        }
 
-            if (string.IsNullOrEmpty(order.Name))
-            {
-                return null;
-            }
+        public async Task<bool> CreateOrder(Order order)
+        {
+            var result = await _orderRepository.Create(order);
 
-            if (order.FinalPrice <= 0)
-            {
-                return null;
-            }
+            return true;
+        }
+        
+        public async Task<Order> Get(int id)
+        {
+            var entity = await _orderRepository.Get(id);
+            return entity;
+        }
 
-            return order;
+        public async Task<bool> DeleteOrder(Order order)
+        {
+            var reault = await _orderRepository.Delete(order);
+            return true;
+        }
+
+        public async Task<Order> GetOrderByName(string name)
+        {
+            var result = await _orderRepository.GetOrderByName(name);
+            return result;
         }
     }
 }

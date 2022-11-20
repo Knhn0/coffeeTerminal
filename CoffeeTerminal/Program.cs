@@ -1,3 +1,4 @@
+using AutoMapper;
 using CoffeeTerminal.DAL;
 using CoffeeTerminal.DAL.Interfaces;
 using CoffeeTerminal.DAL.Repositories;
@@ -15,6 +16,8 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<ICoffeeRepository, CoffeeRepository>();
 builder.Services.AddScoped<IMenuService, MenuService>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
