@@ -19,7 +19,7 @@ namespace CoffeeTerminal.Service.Implementations
         {
             var result = await _orderRepository.Create(order);
 
-            return true;
+            return result;
         }
         
         public async Task<Order> Get(int id)
@@ -30,8 +30,8 @@ namespace CoffeeTerminal.Service.Implementations
 
         public async Task<bool> DeleteOrder(Order order)
         {
-            var reault = await _orderRepository.Delete(order);
-            return true;
+            var result = await _orderRepository.Delete(order);
+            return result;
         }
 
         public async Task<Order> GetOrderByName(string name)
