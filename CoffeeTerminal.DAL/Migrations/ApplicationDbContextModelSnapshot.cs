@@ -22,7 +22,7 @@ namespace CoffeeTerminal.DAL.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CoffeeTerminal.Domain.Entity.Coffee", b =>
+            modelBuilder.Entity("CoffeeTerminal.Domain.Entity.Goods", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,17 +38,12 @@ namespace CoffeeTerminal.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("OrderItemVersionId")
-                        .HasColumnType("integer");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderItemVersionId");
-
-                    b.ToTable("goods");
+                    b.ToTable("Goods");
                 });
 
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.Order", b =>
@@ -72,7 +67,7 @@ namespace CoffeeTerminal.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("orders");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.OrderItem", b =>
@@ -120,6 +115,29 @@ namespace CoffeeTerminal.DAL.Migrations
                     b.ToTable("OrderItemVersion");
                 });
 
+            modelBuilder.Entity("CoffeeTerminal.Domain.Entity.OrderItemVersionGoods", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("GoodsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("OrderItemVersionId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GoodsId");
+
+                    b.HasIndex("OrderItemVersionId");
+
+                    b.ToTable("OrderItemVersionGoods");
+                });
+
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -150,14 +168,7 @@ namespace CoffeeTerminal.DAL.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("users");
-                });
-
-            modelBuilder.Entity("CoffeeTerminal.Domain.Entity.Coffee", b =>
-                {
-                    b.HasOne("CoffeeTerminal.Domain.Entity.OrderItemVersion", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderItemVersionId");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.OrderItem", b =>
@@ -174,6 +185,25 @@ namespace CoffeeTerminal.DAL.Migrations
                         .HasForeignKey("OrderItemId");
                 });
 
+            modelBuilder.Entity("CoffeeTerminal.Domain.Entity.OrderItemVersionGoods", b =>
+                {
+                    b.HasOne("CoffeeTerminal.Domain.Entity.Goods", "Goods")
+                        .WithMany()
+                        .HasForeignKey("GoodsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CoffeeTerminal.Domain.Entity.OrderItemVersion", "OrderItemVersion")
+                        .WithMany("Goods")
+                        .HasForeignKey("OrderItemVersionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Goods");
+
+                    b.Navigation("OrderItemVersion");
+                });
+
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.Order", b =>
                 {
                     b.Navigation("OrderItems");
@@ -186,7 +216,7 @@ namespace CoffeeTerminal.DAL.Migrations
 
             modelBuilder.Entity("CoffeeTerminal.Domain.Entity.OrderItemVersion", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("Goods");
                 });
 #pragma warning restore 612, 618
         }
