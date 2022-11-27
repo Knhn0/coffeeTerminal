@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "hcACke6WaRw+VysJAKLa2mvcycZaDjJFaNQ2wLV7MyYj1Szitf/BEAnG7qBDL/k34LAOtB88mS6Cgae0Rt7mxw==",
   "success": true,
   "projectFilePath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
@@ -15,19 +14,12 @@
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
-  "logs": []
-=======
-  "dgSpecHash": "ZZ8Zw+I2wfRgcwISFBG6zqJfnkdVmJdtSPburjnrYTcADjb5pww3bJ4M85sblr+mUAQa1x1Ha6gZcgQYu/7nHg==",
-  "success": true,
-  "projectFilePath": "C:\\learn\\psu\\coffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
-  "expectedPackageFiles": [],
   "logs": [
     {
-      "code": "NU1803",
+      "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.0.8:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+      "message": "Ошибка чтения файла кэша C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
->>>>>>> future-dockerSupport
 }

@@ -4,16 +4,14 @@ namespace CoffeeTerminal.Domain.Entity
 {
     public class Order
     {
-        public int OrderId { get; set; }
+        public int Id { get; set; }
 
-        public int TripId;
-
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; }
 
         public decimal Price { get; set; }
 
-        public string Description { get; set; } = string.Empty;
+        public string Description { get; set; }
 
-        // public List<> OrderItem { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
     }
 }

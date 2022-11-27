@@ -146,3 +146,4 @@ C:\learn\psu\coffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\CoffeeTerminal.pdb
 C:\learn\psu\coffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\CoffeeTerminal.genruntimeconfig.cache
 C:\learn\psu\coffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\ref\CoffeeTerminal.dll
 >>>>>>> future-dockerSupport
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\appsettings.Production.json

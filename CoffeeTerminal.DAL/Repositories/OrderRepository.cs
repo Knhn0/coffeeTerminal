@@ -22,7 +22,7 @@ public class OrderRepository : IOrderRepository
 
     public async Task<Order> Get(int id)
     {
-        var responce = await _db.orders.FirstOrDefaultAsync(x => x.OrderId == id);
+        var responce = await _db.orders.FirstOrDefaultAsync(x => x.Id == id);
         return responce;
     }
     
