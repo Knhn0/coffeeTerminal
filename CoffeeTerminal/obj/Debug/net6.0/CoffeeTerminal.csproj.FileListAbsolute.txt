@@ -73,5 +73,4 @@ C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\staticwebassets\ms
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoffeeTerminal.props
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CoffeeTerminal.props
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\AutoMapper.dll
-C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -21,5 +21,6 @@ namespace CoffeeTerminal.DAL
 
         public DbSet<Coffee> goods { get; set; }
         public DbSet<Order> orders { get; set; }
+        public DbSet<User> users { get; set; }
     }
 }   

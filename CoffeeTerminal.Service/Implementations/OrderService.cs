@@ -21,7 +21,7 @@ namespace CoffeeTerminal.Service.Implementations
 
             return result;
         }
-        
+
         public async Task<Order> Get(int id)
         {
             var entity = await _orderRepository.Get(id);

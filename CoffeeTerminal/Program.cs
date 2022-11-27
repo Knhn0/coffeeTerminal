@@ -1,10 +1,15 @@
-using AutoMapper;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using CoffeeTerminal.DAL;
 using CoffeeTerminal.DAL.Interfaces;
 using CoffeeTerminal.DAL.Repositories;
+using CoffeeTerminal.Domain.Models;
 using CoffeeTerminal.Service.Implementations;
 using CoffeeTerminal.Service.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +29,30 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add autorization
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options => 
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            // Set up setting of Token Validation
+            ValidateIssuer = true,
+            // Set up Issuer
+            ValidIssuer = AuthOptions.ISSUER,
+            // Validation Audience
+            ValidateAudience = true,
+            //  Set up Token Audience
+            ValidAudience = AuthOptions.AUDIENCE,
+            // Token validation
+            ValidateLifetime = true,
+            // Set up security key
+            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+            // Security key validation
+            ValidateIssuerSigningKey = true,
+        };
+    });
+
 
 // Add DbContext
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -40,6 +69,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -47,5 +78,22 @@ app.UseAuthorization();
 app.UseRouting();
 
 app.MapControllers();
+
+// Generate JWT token
+app.Map("/login/{username}", (string username) => 
+{
+    var claims = new List<Claim> {new Claim(ClaimTypes.Name, username) };
+    // Creating JWT token
+    var jwt = new JwtSecurityToken(
+        issuer: AuthOptions.ISSUER,
+        audience: AuthOptions.AUDIENCE,
+        claims: claims,
+        expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
+        signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+            
+    return new JwtSecurityTokenHandler().WriteToken(jwt);
+});
+ 
+app.Map("/data", [Authorize] () => new { message= "Hello World!" });
 
 app.Run();
