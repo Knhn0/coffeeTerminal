@@ -11,7 +11,22 @@ namespace CoffeeTerminal.DAL.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "orders",
+                name: "Goods",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "numeric", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Goods", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -22,11 +37,11 @@ namespace CoffeeTerminal.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_orders", x => x.Id);
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "users",
+                name: "Users",
                 columns: table => new
                 {
                     UserId = table.Column<int>(type: "integer", nullable: false)
@@ -39,7 +54,7 @@ namespace CoffeeTerminal.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_users", x => x.UserId);
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                 });
 
             migrationBuilder.CreateTable(
@@ -54,9 +69,9 @@ namespace CoffeeTerminal.DAL.Migrations
                 {
                     table.PrimaryKey("PK_OrderItem", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_OrderItem_orders_OrderId",
+                        name: "FK_OrderItem_Orders_OrderId",
                         column: x => x.OrderId,
-                        principalTable: "orders",
+                        principalTable: "Orders",
                         principalColumn: "Id");
                 });
 
@@ -82,30 +97,30 @@ namespace CoffeeTerminal.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "goods",
+                name: "OrderItemVersionGoods",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false),
-                    Price = table.Column<decimal>(type: "numeric", nullable: false),
-                    OrderItemVersionId = table.Column<int>(type: "integer", nullable: true)
+                    OrderItemVersionId = table.Column<int>(type: "integer", nullable: false),
+                    GoodsId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_goods", x => x.Id);
+                    table.PrimaryKey("PK_OrderItemVersionGoods", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_goods_OrderItemVersion_OrderItemVersionId",
+                        name: "FK_OrderItemVersionGoods_Goods_GoodsId",
+                        column: x => x.GoodsId,
+                        principalTable: "Goods",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderItemVersionGoods_OrderItemVersion_OrderItemVersionId",
                         column: x => x.OrderItemVersionId,
                         principalTable: "OrderItemVersion",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_goods_OrderItemVersionId",
-                table: "goods",
-                column: "OrderItemVersionId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderItem_OrderId",
@@ -116,15 +131,28 @@ namespace CoffeeTerminal.DAL.Migrations
                 name: "IX_OrderItemVersion_OrderItemId",
                 table: "OrderItemVersion",
                 column: "OrderItemId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItemVersionGoods_GoodsId",
+                table: "OrderItemVersionGoods",
+                column: "GoodsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItemVersionGoods_OrderItemVersionId",
+                table: "OrderItemVersionGoods",
+                column: "OrderItemVersionId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "goods");
+                name: "OrderItemVersionGoods");
 
             migrationBuilder.DropTable(
-                name: "users");
+                name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "Goods");
 
             migrationBuilder.DropTable(
                 name: "OrderItemVersion");
@@ -133,7 +161,7 @@ namespace CoffeeTerminal.DAL.Migrations
                 name: "OrderItem");
 
             migrationBuilder.DropTable(
-                name: "orders");
+                name: "Orders");
         }
     }
 }
