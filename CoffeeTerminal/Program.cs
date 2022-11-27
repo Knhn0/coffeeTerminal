@@ -54,9 +54,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 
-// Add DbContext
-var connection = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+
+// Add DbContext using SQL Server Provider
+builder.Services.AddDbContext<ApplicationDbContext>();
+// Add migration
 builder.Services.BuildServiceProvider().GetService<ApplicationDbContext>()?.Database.Migrate();
 
 
