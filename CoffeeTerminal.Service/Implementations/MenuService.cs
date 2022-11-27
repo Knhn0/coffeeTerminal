@@ -14,7 +14,7 @@ public class MenuService : IMenuService
         _coffeeRepository = coffeeRepository;
     }
 
-    public async Task<List<Coffee>> GetMenu()
+    public async Task<List<Goods>> GetMenu()
     {
         var collection = _coffeeRepository.Select();
         return await collection;

@@ -13,34 +13,34 @@ public class CoffeeRepository : ICoffeeRepository
         _db = db;
     }
 
-    public async Task<bool> Create(Coffee entity)
+    public async Task<bool> Create(Goods entity)
     {
-        await _db.goods.AddAsync(entity);
+        await _db.Goods.AddAsync(entity);
         await _db.SaveChangesAsync();
         return true;
     }
 
-    public async Task<Coffee> Get(int id)
+    public async Task<Goods> Get(int id)
     {
-        var resp = await _db.goods.FirstOrDefaultAsync(x => x.Id == id);
+        var resp = await _db.Goods.FirstOrDefaultAsync(x => x.Id == id);
         return resp;
     }
 
-    public async Task<List<Coffee>> Select()
+    public async Task<List<Goods>> Select()
     {
-        return await _db.goods.ToListAsync();
+        return await _db.Goods.ToListAsync();
     }
     
-    public async Task<bool> Delete(Coffee entity)
+    public async Task<bool> Delete(Goods entity)
     {
-        _db.goods.Remove(entity);
+        _db.Goods.Remove(entity);
         await _db.SaveChangesAsync();
         return true;
     }
     
     
-    public async Task<Coffee> GetByName(string name)
+    public async Task<Goods> GetByName(string name)
     {
-        return await _db.goods.FirstOrDefaultAsync(x => x.Name == name);
+        return await _db.Goods.FirstOrDefaultAsync(x => x.Name == name);
     }
 }

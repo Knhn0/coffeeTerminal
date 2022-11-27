@@ -22,3 +22,15 @@ C:\learn\psu\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTermina
 C:\learn\psu\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\refint\CoffeeTerminal.Domain.dll
 C:\learn\psu\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.pdb
 C:\learn\psu\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\ref\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Debug\net6.0\CoffeeTerminal.Domain.deps.json
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Debug\net6.0\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Debug\net6.0\CoffeeTerminal.Domain.pdb
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.csproj.AssemblyReference.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.AssemblyInfoInputs.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.AssemblyInfo.cs
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.csproj.CoreCompileInputs.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\refint\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\CoffeeTerminal.Domain.pdb
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Debug\net6.0\ref\CoffeeTerminal.Domain.dll

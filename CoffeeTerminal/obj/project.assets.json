@@ -2410,19 +2410,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\": {}
+    "C:\\Users\\Администратор\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal\\CoffeeTerminal.csproj",
+      "projectUniqueName": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal\\CoffeeTerminal.csproj",
       "projectName": "CoffeeTerminal",
-      "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal\\CoffeeTerminal.csproj",
-      "packagesPath": "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\",
-      "outputPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal\\obj\\",
+      "projectPath": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal\\CoffeeTerminal.csproj",
+      "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
+      "outputPath": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Shnaider Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2436,14 +2441,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.DAL\\CoffeeTerminal.DAL.csproj": {
-              "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.DAL\\CoffeeTerminal.DAL.csproj"
+            "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.DAL\\CoffeeTerminal.DAL.csproj": {
+              "projectPath": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.DAL\\CoffeeTerminal.DAL.csproj"
             },
-            "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj": {
-              "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj"
+            "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj": {
+              "projectPath": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj"
             },
-            "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj": {
-              "projectPath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj"
+            "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj": {
+              "projectPath": "E:\\PGU\\3\\coffeeTerminal\\CoffeeTerminal.Service\\CoffeeTerminal.Service.csproj"
             }
           }
         }
@@ -2497,8 +2502,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -2510,16 +2514,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Ошибка чтения файла кэша C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
