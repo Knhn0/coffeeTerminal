@@ -2,8 +2,8 @@
 
 namespace CoffeeTerminal.DAL.Interfaces
 {
-    public interface ICoffeeRepository : IBaseRepository<Coffee>
+    public interface ICoffeeRepository : IBaseRepository<Goods>
     {
-        Coffee GetByName(string name);
+        Task<Goods> GetByName(string name);
     }
 }

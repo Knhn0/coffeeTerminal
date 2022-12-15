@@ -6,7 +6,6 @@ namespace CoffeeTerminal.DAL.Repositories;
 
 public class CoffeeRepository : ICoffeeRepository
 {
-
     private readonly ApplicationDbContext _db;
 
     public CoffeeRepository(ApplicationDbContext db)
@@ -14,28 +13,34 @@ public class CoffeeRepository : ICoffeeRepository
         _db = db;
     }
 
-    public bool Create(Coffee entity)
+    public async Task<bool> Create(Goods entity)
     {
-        throw new NotImplementedException();
+        await _db.Goods.AddAsync(entity);
+        await _db.SaveChangesAsync();
+        return true;
     }
 
-    public Coffee Get(int id)
+    public async Task<Goods> Get(int id)
     {
-        throw new NotImplementedException();
+        var resp = await _db.Goods.FirstOrDefaultAsync(x => x.Id == id);
+        return resp;
     }
 
-    public Task<List<Coffee>> Select()
+    public async Task<List<Goods>> Select()
     {
-        return _db.Products.ToListAsync();
+        return await _db.Goods.ToListAsync();
     }
-
-    public bool Delete(Coffee entity)
+    
+    public async Task<bool> Delete(Goods entity)
     {
-        throw new NotImplementedException();
+        _db.Goods.Remove(entity);
+        await _db.SaveChangesAsync();
+        return true;
     }
-
-    public Coffee GetByName(string name)
+    
+    
+    public async Task<Goods> GetByName(string name)
     {
-        throw new NotImplementedException();
+        return await _db.Goods.FirstOrDefaultAsync(x => x.Name == name);
     }
 }

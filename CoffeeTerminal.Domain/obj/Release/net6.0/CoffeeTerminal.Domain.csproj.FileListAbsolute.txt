@@ -10,3 +10,15 @@ C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTer
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\refint\CoffeeTerminal.Domain.dll
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.pdb
 C:\Progs\Sharp\CoffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\ref\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Release\net6.0\CoffeeTerminal.Domain.deps.json
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Release\net6.0\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\bin\Release\net6.0\CoffeeTerminal.Domain.pdb
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.csproj.AssemblyReference.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.AssemblyInfoInputs.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.AssemblyInfo.cs
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.csproj.CoreCompileInputs.cache
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\refint\CoffeeTerminal.Domain.dll
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\CoffeeTerminal.Domain.pdb
+E:\PGU\3\coffeeTerminal\CoffeeTerminal.Domain\obj\Release\net6.0\ref\CoffeeTerminal.Domain.dll

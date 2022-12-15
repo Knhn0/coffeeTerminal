@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeTerminal.Domain", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeTerminal.DAL", "CoffeeTerminal.DAL\CoffeeTerminal.DAL.csproj", "{F8AD1440-A46D-4C38-8BE7-C79F6C700FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeTerminal.Service", "CoffeeTerminal.Service\CoffeeTerminal.Service.csproj", "{6BB21E21-E680-41FD-941F-F131A050E330}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F8AD1440-A46D-4C38-8BE7-C79F6C700FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8AD1440-A46D-4C38-8BE7-C79F6C700FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8AD1440-A46D-4C38-8BE7-C79F6C700FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB21E21-E680-41FD-941F-F131A050E330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB21E21-E680-41FD-941F-F131A050E330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB21E21-E680-41FD-941F-F131A050E330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB21E21-E680-41FD-941F-F131A050E330}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

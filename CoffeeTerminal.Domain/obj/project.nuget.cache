@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "ZZ8Zw+I2wfRgcwISFBG6zqJfnkdVmJdtSPburjnrYTcADjb5pww3bJ4M85sblr+mUAQa1x1Ha6gZcgQYu/7nHg==",
+  "dgSpecHash": "hcACke6WaRw+VysJAKLa2mvcycZaDjJFaNQ2wLV7MyYj1Szitf/BEAnG7qBDL/k34LAOtB88mS6Cgae0Rt7mxw==",
   "success": true,
-  "projectFilePath": "C:\\learn\\psu\\coffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.0.8:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  "projectFilePath": "C:\\Progs\\Sharp\\CoffeeTerminal\\CoffeeTerminal.Domain\\CoffeeTerminal.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.11\\microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\Shnaider Kirill\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
 }
