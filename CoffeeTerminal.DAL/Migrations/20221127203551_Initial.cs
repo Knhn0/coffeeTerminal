@@ -81,8 +81,8 @@ namespace CoffeeTerminal.DAL.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ExpirationData = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreationDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false),
+                    ExpirationData = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false),
                     Type = table.Column<int>(type: "integer", nullable: false),
                     OrderItemId = table.Column<int>(type: "integer", nullable: true)
                 },

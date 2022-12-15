@@ -14,8 +14,8 @@ public class UserController : BaseController
         _userService = userService;
     }
 
-    [HttpPost("registration")]
-    public async Task<ActionResult<bool>> Registration(User user)
+    [HttpPost("register")]
+    public async Task<ActionResult<bool>> Register(User user)
     {
         var result = await _userService.Register(user);
        

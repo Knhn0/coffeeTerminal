@@ -4,6 +4,6 @@ namespace CoffeeTerminal.DAL.Interfaces;
 
 public interface IOrderRepository : IBaseRepository<Order>
 {
-    Task<Order> GetOrderByName(string name);
-
+    Task<Order> Get(int id);
+    
 }

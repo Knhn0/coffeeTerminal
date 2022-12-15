@@ -34,10 +34,5 @@ namespace CoffeeTerminal.Service.Implementations
             return result;
         }
 
-        public async Task<Order> GetOrderByName(string name)
-        {
-            var result = await _orderRepository.GetOrderByName(name);
-            return result;
-        }
     }
 }

@@ -38,9 +38,8 @@ public class UserRepository : IUserRepository
         return true;
     }
 
-    public async Task<User> GetUserByName(string name)
+    public async Task<User> GetUserByUsername(string name)
     {
-
         return await _db.Users.FirstOrDefaultAsync(x => x.Username == name);
     }
 }

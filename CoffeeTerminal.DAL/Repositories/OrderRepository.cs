@@ -25,7 +25,7 @@ public class OrderRepository : IOrderRepository
         var responce = await _db.Orders.FirstOrDefaultAsync(x => x.Id == id);
         return responce;
     }
-    
+
 
     public async Task<List<Order>> Select()
     {
@@ -37,10 +37,5 @@ public class OrderRepository : IOrderRepository
         _db.Orders.Remove(entity);
         await _db.SaveChangesAsync();
         return true;
-    }
-
-    public async Task<Order> GetOrderByName(string name)
-    {
-        return await _db.Orders.FirstOrDefaultAsync(x => x.Name == name);
     }
 }

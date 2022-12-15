@@ -7,6 +7,5 @@ namespace CoffeeTerminal.Service.Interfaces
         Task<bool> CreateOrder(Order order);
         Task<Order> Get(int id);
         Task<bool> DeleteOrder(Order order);
-        Task<Order> GetOrderByName(string name);
     }
 }
